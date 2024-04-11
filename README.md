@@ -1,9 +1,6 @@
 # Arquitetura do projeto Sugerida
 
-```
 ![image](https://github.com/pedro-canedo/ecommerce-api/assets/82132100/9a8411e4-578a-4ac9-8342-96b55017866f)
-```
-
 
 
 
