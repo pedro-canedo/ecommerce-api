@@ -57,9 +57,9 @@ ecommerce-api/
             │   │   └── Migrations/
             │   ├── Identity/
             │   ├── IoC/
-            │   └── Services/ (por exemplo, serviços de log, envio de e-mail, etc.)
+            │   └── Services/
             │
-            └── Common/ (opcional, para coisas que realmente são compartilhadas por todas as camadas)
+            └── Common/
                 ├── Utilities/
                 └── Extensions/
 
