@@ -1,0 +1,47 @@
+﻿@*
+    
+*@
+@model IEnumerable<web_ecommerce_maxima_tech.Models.ProdutoModel>
+
+@{
+    ViewData["Title"] = "Cadastro de Produtos";
+}
+<h2>Produtos</h2>
+
+
+<p>
+    <a href="@Url.Action("Create")">Adicionar Novo Produto</a>
+</p>
+
+<div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Departamento</th>
+                <th>Preço</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.ProdutosComDepartamento)
+            {
+                <tr>
+                    <td>@item.Produto.Codigo</td>
+                    <td>@item.Produto.Descricao</td>
+                    <td>@item.DepartamentoDescricao</td>
+                    <td>@item.Produto.Preco.ToString("C")</td>
+                    <td>@(item.Produto.Status ? "Ativo" : "Inativo")</td>
+                    <td>
+                        <a href="@Url.Action("Edit", new { id = item.Produto.Id })">Editar</a> |
+                        <a href="@Url.Action("Delete", new { id = item.Produto.Id })">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,10 @@
+﻿@model web_ecommerce_maxima_tech.Models.ProdutoModel
+
+<h2>Excluir Produto</h2>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <p>Tem certeza que deseja excluir o produto @Model.Descricao?</p>
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-default">Cancelar</a>
+</form>
