@@ -65,62 +65,76 @@ ecommerce-api/
 
 ```
 
-Pré-requisitos:
+# Configuração do Ambiente com Docker para api-ecommerce-maxima-tech Este guia abrange a configuração de um ambiente de desenvolvimento Dockerizado para o projeto api-ecommerce-maxima-tech.
 
-Docker instalado e configurado.
-Docker Compose instalado.
-Git instalado.
-Passo a Passo:
-
-Clone o repositório do projeto:
+- Clone o repositório do projeto:
 ```
 git clone [https://github.com/seu-usuario/api-ecommerce-maxima-tech.git](https://github.com/pedro-canedo/ecommerce-api.git)
 ```
 
-Acesse a pasta do projeto:
-cd api-ecommerce-maxima-tech
-Crie e configure o arquivo .env:
-Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente necessárias.
+## Pré-requisitos
+### Antes de começar, assegure-se de que o Docker e o Docker Compose estejam instalados e corretamente configurados em sua máquina. Consulte a documentação oficial para instalação:
 
-Exemplo de arquivo .env:
+- Docker: https://docs.docker.com/get-docker/
+- Docker Compose: https://docs.docker.com/compose/install/
 
-# Variáveis de ambiente do banco de dados
+
+### Variáveis de ambiente do banco de dados
+
+```
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=ecommerce
-
-# Variáveis de ambiente da API
-ASPNETCORE_URLS=http://localhost:5000
-Instale as dependências do projeto:
-```
-dotnet restore
-```
-Crie as imagens do Docker:
-```
-docker-compose build
-```
-Inicialize o banco de dados:
-Execute a API:
-docker-compose up
-Acesse a API:
-A API estará disponível em 
-```
-http://localhost:5000
 ```
 
-Observações:
+### Este projeto foi desenvolvido com .Net core 8.0
+- Para rodar o projeto, basta executar o comando abaixo na raiz do projeto:
 
-O comando docker-compose up inicia os containers do banco de dados e da API em segundo plano.
-Para parar os containers, pressione Ctrl+C.
-Você pode usar o comando docker-compose logs para verificar os logs dos containers.
-Para acessar o container da API, use o comando docker exec -it api-ecommerce-maxima-tech bash.
-Solução de problemas:
+- importante !!! 
+- Garanta que as seguintes portas estejam disponíveis em sua máquina:
+    - 5000
+    - 16543
+    - 3000
 
-Se você encontrar erros ao executar o comando docker-compose up, verifique se o Docker e o Docker Compose estão instalados e configurados corretamente.
-Verifique também se as variáveis de ambiente no arquivo .env estão configuradas corretamente.
+```
+    docker-compose up --build
+``` 
+
+- você deverá receber algo como isto em seu terminal
+
+```
+[+] Running 5/5
+ ✔ Network ecommerce-api_default      Created                                                                                                                                                                                   0.2s 
+ ✔ Container ecommerce-api-db-1       Created                                                                                                                                                                                   0.1s 
+ ✔ Container ecommerce-api-api-1      Created                                                                                                                                                                                   0.2s 
+ ✔ Container ecommerce-api-web-1      Created                                                                                                                                                                                   0.2s 
+ ✔ Container ecommerce-api-pgadmin-1  Created                                                                                                                                                                                   0.2s 
+ ```
+
+### Acessar os serviços
+- rotas:
+
+```
+    PGADMIN: http://localhost:5050
+    API: http://localhost:8000
+    WEB: http://localhost:8080
+```
+
+### Acessar o banco de dados
+- pgAdmin
+```
+    user: admin@admin.com
+    password: admin
+```
 
 
-Documentação do Docker: https://docs.docker.com/get-started/
-Documentação do Docker Compose: https://docs.docker.com/compose/overview/
+
+
+# Testes
+- Para rodar os testes, basta executar o comando abaixo na raiz do projeto:
+
+```
+    dotnet test
+```

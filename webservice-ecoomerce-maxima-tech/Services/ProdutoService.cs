@@ -1,4 +1,4 @@
-﻿using web_ecommerce_maxima_tech.Models;
+﻿using webservice_ecoomerce_maxima_tech.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -17,7 +17,7 @@ public class ProdutoService
     {
         _httpClient = httpClient;
         _baseUrl = configuration.GetValue<string>("ApiSettings:BaseUrl");
-    
+
     }
     public async Task<IEnumerable<ProdutoModel>> GetProdutosAsync()
     {

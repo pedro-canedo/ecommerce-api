@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gPz8h81HA3AUzTpEPwNm4k3gP3T9s3kpmvyfz6cjEaonPHTf0BPL2URejDwoVaM0RwVZmdJ9YcJ6JMY6bQQJUw==",
+  "dgSpecHash": "G3ZCbM6Aejfa+tA1BFwZOhs55v+H6A8NroVF7+z/DnejSTa04TnuYWYE29cs8nkT05LJChffW41KDSvoOcaioQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PedroAugustoCanedoAr\\source\\repos\\ecommerce-api\\api-ecommerce-maxima-tech\\api-ecommerce-maxima-tech.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\PedroAugustoCanedoAr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Threading.Tasks;
-using web_ecommerce_maxima_tech.Models;
+using webservice_ecoomerce_maxima_tech.Models;
 
 
-namespace web_ecommerce_maxima_tech.Controllers
+namespace webservice_ecoomerce_maxima_tech.Controllers
 {
     public class ProdutoController : Controller
     {

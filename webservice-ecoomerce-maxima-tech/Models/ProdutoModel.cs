@@ -1,5 +1,5 @@
 ﻿
-namespace web_ecommerce_maxima_tech.Models
+namespace webservice_ecoomerce_maxima_tech.Models
 
 {
     public class ProdutoModel
