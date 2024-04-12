@@ -13,7 +13,7 @@ services:
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - ecomerce-network
+      - app-network
 
   pgadmin:
     image: dpage/pgadmin4
@@ -25,33 +25,37 @@ services:
     depends_on:
       - db
     networks:
-      - ecomerce-network
+      - app-network
 
   api:
     build:
       context: ./api-ecommerce-maxima-tech
       dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "8000:80"
+      - "8000:8000"
     depends_on:
       - db
     networks:
-      - ecomerce-network
+      - app-network
 
   web:
     build:
       context: ./webservice-ecoomerce-maxima-tech
       dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "3000:80"
     depends_on:
       - api
     networks:
-      - ecomerce-network
+      - app-network
 
 volumes:
   postgres_data:
 
 networks:
-  ecomerce-network:
+  app-network:
     driver: bridge
