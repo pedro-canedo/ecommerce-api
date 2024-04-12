@@ -124,13 +124,13 @@ POSTGRES_DB=ecommerce
 - rotas:
 
 ```
-    PGADMIN: http://localhost:5050
-    API: http://localhost:8000
-    WEB: http://localhost:8080
+    PGADMIN: [http://localhost:5050](http://localhost:5050/login)
+    API: [http://localhost:8000](http://localhost:8000/swagger/index.html)
+    WEB: [http://localhost:8080](http://localhost:3000/)
 ```
 
 ### Acessar o banco de dados
-- pgAdmin
+- pgAdmin acessos
 ```
     user: admin@admin.com
     password: admin
