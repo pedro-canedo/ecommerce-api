@@ -143,5 +143,6 @@ POSTGRES_DB=ecommerce
 - Para rodar os testes, basta executar o comando abaixo na raiz do projeto:
 
 ```
+    cd api-ecommerce-maxima-tech.Tests
     dotnet test
 ```
