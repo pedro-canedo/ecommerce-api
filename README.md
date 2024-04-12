@@ -94,9 +94,10 @@ POSTGRES_DB=ecommerce
 
 - importante !!! 
 - Garanta que as seguintes portas estejam disponíveis em sua máquina:
-    - 5000
-    - 16543
+    - 8000
     - 3000
+    - 5432
+    - 5050
 
 ```
     docker-compose up --build
