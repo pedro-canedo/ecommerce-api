@@ -93,11 +93,17 @@ POSTGRES_DB=ecommerce
 - Para rodar o projeto, basta executar o comando abaixo na raiz do projeto:
 
 - importante !!! 
+
 - Garanta que as seguintes portas estejam disponíveis em sua máquina:
     - 8000
     - 3000
     - 5432
     - 5050
+
+- você pode verificar isto da seguinte forma:
+  - Para verificar no windows:  netstat -aon | findstr :8000
+  - para verificar no linux: ss -tuln | grep :8000
+
 
 ```
     docker-compose up --build
