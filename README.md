@@ -69,7 +69,7 @@ ecommerce-api/
 
 - Clone o repositório do projeto:
 ```
-git clone [https://github.com/seu-usuario/api-ecommerce-maxima-tech.git](https://github.com/pedro-canedo/ecommerce-api.git)
+git clone [https://github.com/pedro-canedo/api-ecommerce-maxima-tech.git](https://github.com/pedro-canedo/ecommerce-api.git)
 ```
 
 ## Pré-requisitos
